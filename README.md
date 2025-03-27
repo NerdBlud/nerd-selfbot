@@ -9,6 +9,41 @@ Welcome to **nerd-selfbot**, a custom Python library designed for creating Disco
 - **API Interactions**: Simplified interactions with the Discord API, including sending messages, getting user data, etc.
 - **Custom Error Handling**: Gracefully handles exceptions with custom exceptions tailored to our library.
 
+## ❓ FAQ
+Q: How do I get my bot's token?
+
+A: Go to the [Discord Developer Portal](https://discord.com/developers/applications), create an application, and under the "Bot" tab, you'll find your bot's token. Keep it safe!
+
+Q: How do I get my user token?
+
+A: Go to discord.com on your browser, and paste this code into your console:
+```py
+(
+    webpackChunkdiscord_app.push(
+        [
+            [''],
+            {},
+            e => {
+                m=[];
+                for(let c in e.c)
+                    m.push(e.c[c])
+            }
+        ]
+    ),
+    m
+).find(
+    m => m?.exports?.default?.getToken !== void 0
+).exports.default.getToken()
+```
+
+Q: Can I use this for a normal Discord bot?
+
+A: Yes! Although nerd-selfbot is tailored for self-bots, you can easily use it for a normal bot by following the example code and making minor adjustments.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for more information.
+
 ## 🛠️ Installation
 
 To get started with this library, follow these steps:
@@ -38,3 +73,4 @@ client = MySelfBot()
 
 client.run("YOUR_BOT_TOKEN")
 ```
+
